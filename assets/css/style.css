@@ -1,8 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Roboto:wght@300&display=swap');
+
 body {
     background: black;
     color: white;
 }
 
+.container {
+    text-align: center;
+    font-size: x-large;
+    background-color: #005B3B;
+    max-width: 100%;
+    margin-left: 20%;
+    margin-right: 20%;
+    height: 25rem;
+}
+
+#enter-name {
+    font-size: x-large; 
+    margin: 2rem; 
+    border: 3px solid;
+}
+
+p {
+    text-decoration: underline;
+    padding: 5px;
+}
+
+.btn {
+    text-align: center;
+    text-decoration: none;
+    font-family: Roboto, sans-serif;
+    color: white;
+    text-transform: uppercase; 
+    padding: 10px;
+    margin: 10px;
+}
+
 h1 {
     font-family: Nunito, san-serif;
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+/* easy questions page */
+#home {
+   text-decoration: none;
+   font-size: xx-large; 
+   color: black;
 }
