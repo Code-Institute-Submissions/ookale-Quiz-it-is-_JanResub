@@ -16,13 +16,17 @@
 
 <body>
     <div class="container">
-        <h1>Do you know sports?</h1>
-        <input type="text" name="name" id="enter-name" placeholder="Enter your name here">
-        <br>
-        <p>Choose difficulty level</p>
-        <a href="/easy.html" class="btn">Easy</a>
-        <a href="/intermediate.html" class="btn">Intermediate</a>
-        <a href="/hard.html" class="btn">Hard</a>
+        <div>
+            <h1>Do you know sports?</h1>
+            <input type="text" name="name" id="enter-name" placeholder="Enter your name here">
+            <p>Choose difficulty level</p>
+        </div>
+        <div class="diff-level">
+            <a id="easy">Easy</a>
+            <a id="interme">Intermediate</a>
+            <a id="hard">Hard</a>
+        </div>
+        <button class="start">Let's play!</button>
     </div>
 
     <script src="assets/js/script.js"></script>
