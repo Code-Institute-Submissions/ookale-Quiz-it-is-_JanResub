@@ -17,21 +17,51 @@ section {
     justify-content: center;
 }
 
-div > h1 {
+ h1 {
     font-family: Nunito, san-serif;
-    text-align: center;
+    max-width: 100%;
+    margin: auto 0;
+    position: absolute;
+    right: 40%;
+    top: 15px;
+    display: flex;
     flex-flow: column wrap;
-    align-self: flex-start;
+    align-items: center;
 }
 
 .container {
     text-align: center;
     font-size: large;
     background-color: #005B3B;
+    padding: 10px;
     height: 80%;
     width: 80%;
     display: flex;
     flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    border: 1px solid;
+    border-color: greenyellow;
+    position: relative;
+}
+
+.scoreboard {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+}
+
+form h2 {
+    line-height: 10px;
+    margin-bottom: 10px;
+}
+
+form .options {
+    padding: 5px;
+    margin: 5px;
+    letter-spacing: 1px;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
