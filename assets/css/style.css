@@ -48,8 +48,7 @@ section {
 
 .scoreboard {
     position: absolute;
-    top: 25%;
-    left: 25%;
+    left: 15px;
 }
 
 form h2 {
@@ -57,26 +56,27 @@ form h2 {
     margin-bottom: 10px;
 }
 
-form .options {
+form .option {
     padding: 5px;
     margin: 5px;
     letter-spacing: 1px;
     display: flex;
+    flex-flow: row no-wrap;
     align-items: center;
     justify-content: center;
 }
 
-.diff-level {
-    text-align: center;
-    font-family: Roboto, sans-serif;
-    color: white;
-    text-transform: ;
-    padding: 10px;
-    margin: 10px;
+.option label {
+    margin-left: 5px;
     align-items: center;
     justify-content: center;
-    flex-flow: column wrap;
 }
+
+.option input {
+    align-items: center;
+    justify-content: center;
+}
+
 
 /* media queries */
 

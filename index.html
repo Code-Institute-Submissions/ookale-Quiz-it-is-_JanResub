@@ -17,17 +17,8 @@
 <body>
     <section>
         <div class="container">
-            <div><h1>Do you know sports?</h1></div>
-            <div class="choose">
-                <p>Choose difficulty level</p>
-            </div>
-            <div class="diff-level">
-                <a id="easy">Easy</a>
-                <a id="interme">Intermediate</a>
-                <a id="hard">Hard</a>
-            </div>
-            <div>
-                <button class="start">Let's play!</button>
+            <div class="start"><h1>Do you know sports?</h1>
+                <button id="start-btn">Let's play!</button>
             </div>
             <div class="scoreboard"><span class="scorenum">0</span>/<span class="total-quest">10</span></div>
             <form id="quiz-form">
@@ -49,9 +40,28 @@
                         <input type="radio" id="option4" value="1" name="quiz">
                         <label for="option4">Gunnar Nordahl</label>
                     </div>
+                    <h2>Question: <span class="quest">At the 1980 Winter Olympics, the United States defeated which 
+                        team in a match known as the "Miracle on Ice"? </span></h2>
+                <div class="all-options">
+                    <div class="option">
+                        <input type="radio" id="option1" value="1" name="quiz">
+                        <label for="option1">Canada</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="option2" value="1" name="quiz">
+                        <label for="option2">Sweden</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="option3" value="1" name="quiz">
+                        <label for="option3">USSR</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="option4" value="1" name="quiz">
+                        <label for="option4">Finland</label>
+                    </div>
                     <div class="button">
-                        <button type="cancel">Cancel</button>
-                        <button type="submit">Next</button>
+                        <button id="cancel" type="cancel">Cancel</button>
+                        <button id="next" type="submit">Next</button>
                     </div>
                 </div>
             </form>
