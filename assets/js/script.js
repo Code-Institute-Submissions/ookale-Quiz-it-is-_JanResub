@@ -1,14 +1,14 @@
 const startButton = document.getElementById("start-btn");
+const quizForm = document.getElementById("quiz-form");
 
 startButton.addEventListener("click", startGame)
 
 function startGame() {
-    console.log("OK to start");
-
+    startButton.classList.add("hide")
+    quizForm.classList.remove("hide");
 }
 
 const scoreBoard = document.getElementsByClassName(".scoreboard");
-const quizForm = document.getElementById("quiz-form");
 const options = document.getElementsByClassName("all-options");
 const option = document.getElementsByClassName("option");
 const question = document.getElementsByClassName("quest");

@@ -77,6 +77,9 @@ form .option {
     justify-content: center;
 }
 
+.hide {
+    display: none;
+}
 
 /* media queries */
 
