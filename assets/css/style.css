@@ -1,44 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&family=Roboto:wght@300&display=swap');
 
-body {
-    background: black;
-    color: white;
-    display: flex;
-    flex-flow: column wrap;
-    align-content: center;
-    width: 100vw;
-    height: 100vh;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-h1 {
+section {
+    background: black;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+div > h1 {
     font-family: Nunito, san-serif;
     text-align: center;
-    padding-top: 5px;
+    flex-flow: column wrap;
+    align-self: flex-start;
 }
 
 .container {
     text-align: center;
     font-size: large;
     background-color: #005B3B;
-    height: 70%;
-    width: 70%;
-    flex-flow: row wrap;
-}
-
-#enter-name {
-    text-align center;
-    font-size: x-large;
-    margin: 5px;
-    border: 3px solid;
+    height: 80%;
+    width: 80%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .diff-level {
     text-align: center;
     font-family: Roboto, sans-serif;
     color: white;
-    text-transform: uppercas
+    text-transform: ;
     padding: 10px;
     margin: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
 }
 
 /* media queries */
@@ -54,7 +61,6 @@ h1 {
 /* For smaller screen sizes 550px wide and down */
 @media screen and (max-width: 550px) {
 
-    #enter-name,
     .container {
         font-size: medium;
     }
