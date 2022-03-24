@@ -19,14 +19,25 @@ section {
 
  h1 {
     font-family: Nunito, san-serif;
+    font-size: 45px;
     max-width: 100%;
     margin: auto 0;
     position: absolute;
-    right: 40%;
-    top: 15px;
+    left: 35%;
+    right: 35%;
+    top: 10%;
+    text-align: center;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
+    justify-content: center;
+}
+
+#start-btn {
+    font-size: xx-large;
+    padding: 15px;
+    background-color: greenyellow;
+    font-weight: bold;
 }
 
 .container {
@@ -41,7 +52,7 @@ section {
     align-items: center;
     justify-content: center;
     border-radius: 6px;
-    border: 1px solid;
+    border: 2px solid;
     border-color: greenyellow;
     position: relative;
 }
@@ -51,29 +62,24 @@ section {
     left: 15px;
 }
 
-form h2 {
-    line-height: 10px;
-    margin-bottom: 10px;
-}
-
-form .option {
+form .answers {
     padding: 5px;
     margin: 5px;
     letter-spacing: 1px;
     display: flex;
-    flex-flow: row no-wrap;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
 }
 
-.option label {
+.answers label {
     margin-left: 5px;
-    align-items: center;
+    flex-flow: column wrap;
+    align-items: baseline;
     justify-content: center;
 }
 
-.option input {
-    align-items: center;
+.answers input {
+    flex-flow: column wrap;
+    align-items: baseline;
     justify-content: center;
 }
 
