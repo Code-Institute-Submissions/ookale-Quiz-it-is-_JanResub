@@ -27,7 +27,7 @@ function nextQuestion() {
 
    function showQuestion(question) {
        questionSpace.innerText = question.question
-       question.answers.forEach(answer => {
+       question.answers.forEach(answers => {
          const label = document.createElement("label");
          label.innerText = answer.text
        })
@@ -41,8 +41,54 @@ let questions = [{
           { text: "Marco Materazzi", correct: false },
           { text: "Michael Ballack", corect: false },
           { text: "Luis Figo", correct: false }
-        ]
-    }]
+        ],
+      },
+        {
+          question: "What was Wayne Gretzky's nickname?",
+          answers: [
+            { text: "The Best One", correct: false },
+            { text: "The First One", correct: false },
+            { text: "The Next One", corect: false },
+            { text: "The Great One", correct: true }
+          ],
+        },
+          {
+            question: "There is a team in the NBA from Toronto, what are they called??",
+            answers: [
+              { text: "The Celtics", correct: false },
+              { text: "The Maple Leafs", correct: false },
+              { text: "The Cobras", corect: false },
+              { text: "The Raptors", correct: true }
+            ],
+          },
+            {
+              question: "Where was the Summer Olympics 1996 held??",
+              answers: [
+                { text: "Athens", correct: false },
+                { text: "Los Angeles", correct: false },
+                { text: "Atlanta", corect: true},
+                { text: "Sydney", correct: false }
+              ],
+            },
+              {
+                question: "Which NBA teams does LeBronJames play for (2022)?",
+                answers: [
+                  { text: "Miami Heat", correct: false },
+                  { text: "Los Angeles Lakers", correct: true },
+                  { text: "Golden State Warriors", corect: false },
+                  { text: "Cleveland Cavaliers", correct: false }
+                ],
+              },
+                {
+                  question: "Which city does the football team 'Galatasaray' come from?",
+                  answers: [
+                    { text: "Barcelona", correct: false },
+                    { text: "Belgrade", correct: false },
+                    { text: "Cairo", corect: false },
+                    { text: "Istanbul", correct: true }
+                  ],
+                },
+    ]
 
 
     
