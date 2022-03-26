@@ -27,7 +27,7 @@ function nextQuestion() {
 
    function showQuestion(question) {
        questionSpace.innerText = question.question
-       question.answers.forEach(answers => {
+       question.answers.forEach(answer => {
          const label = document.createElement("label");
          label.innerText = answer.text
        })
