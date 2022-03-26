@@ -22,11 +22,11 @@ Working quiz to start with.
 ### Validator Testing
 
 - HTML
-Messy HTML code and came back with many bugs due to my performance to try and fix my JavaScript code. [W3C validator]
+Messy code and came back with many bugs due to my performance to try and fix my JavaScript code. W3C validator
 
 
 -CSS
-No errors were found when passing through the official [(Jigsaw) validator]
+No errors were found when passing through the official Jigsaw validator. A bit messy also due to the same reason as above. 
 
 - Lighthouse came back with good accessability. 
 
