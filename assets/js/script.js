@@ -31,6 +31,7 @@ let radioButtonLabels = [
   radioButtonLabel4
 ];
 
+/* Start game */
 startButton.addEventListener("click", startGame)
 
 function startGame() {
@@ -45,7 +46,7 @@ function startGame() {
 nextButton.addEventListener("click", nextQuestion)
 
 function nextQuestion() {
-  // hitta knappen som är vald
+  /* Find the selected radiobutton */
   let selectedButton;
   radioButtons.forEach(radioButton => {
       if (radioButton.checked === true){
@@ -152,10 +153,10 @@ let questions = [{
                 {
                   question: "Which city does the football team 'Galatasaray' come from?",
                   answers: [
-                    { text: "Barcelona", correct: false },
+                    { text: "Istanbul", correct: false },
                     { text: "Belgrade", correct: false },
                     { text: "Cairo", corect: false },
-                    { text: "Istanbul", correct: true }
+                    { text: "Barcelona", correct: true }
                   ],
                 },
     ]
