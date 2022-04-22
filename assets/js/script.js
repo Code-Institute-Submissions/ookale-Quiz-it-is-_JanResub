@@ -46,22 +46,25 @@ nextButton.addEventListener("click", nextQuestion)
 
 function nextQuestion() {
   // hitta knappen som är vald
-  const selectedButton = radioButtons.forEach(radioButton => {
-    {radioButton.checked === true}
+  let selectedButton;
+  radioButtons.forEach(radioButton => {
+      if (radioButton.checked === true){
+      selectedButton = radioButton
+    }
   });
-  console.log({selectedButton})
 
   // hitta vilken label som hör till den valda knappen
-  const selectedLabel = radioButtonLabels.forEach(label => {
-    {label.htmlFor === selectedButton?.id;console.log(label.htmlFor, selectedButton)}
+  let selectedLabel;
+  radioButtonLabels.forEach(label => {
+      if (label.htmlFor === selectedButton?.id) {
+        selectedLabel = label
+    }
   });
-  console.log(selectedLabel?.innerText);
+  console.log({selectedLabel})
   
   // radioButtons.forEach(
   //   radioButtonLabel => document.getElementById(radioButtonLabel.htmlFor)?.checked === true
   // )
-  
-  console.log(selectedLabel)
   
     // spara undan nuvarande fråga i variabel
     const myQuestion = shuffledQuestions[currentQuestion]
