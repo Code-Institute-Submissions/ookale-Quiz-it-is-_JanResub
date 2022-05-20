@@ -43,6 +43,7 @@ function startGame() {
   shuffledQuestions = questions.sort(() => Math.random() - .5)
   currentQuestion = 0;
   showQuestion(shuffledQuestions[currentQuestion])
+  totalQuestionsCounter.innerText = questions.length
 }
 
 nextButton.addEventListener("click", nextQuestion)
