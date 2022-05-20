@@ -2,6 +2,8 @@ const startButton = document.getElementById("start-btn");
 const nextButton = document.getElementById("next");
 const quizForm = document.getElementById("quiz-form");
 const restartButton = document.getElementById("restart");
+const currentQuestionCounter = document.getElementById("current-question");
+const totalQuestionsCounter = document.getElementById("total-questions");
 let counter = document.getElementById("counter");
 const containerElements = document.getElementsByClassName("container");
 const questionSpace = document.getElementById("question");
@@ -101,6 +103,7 @@ function showQuestion(question) {
     const label = document.getElementById("optionLabel" + `${i+1}`);
     label.innerText = question.answers[i].text
   }
+  currentQuestionCounter.innerText = currentQuestion +1
 }
 
 function showResult() {
