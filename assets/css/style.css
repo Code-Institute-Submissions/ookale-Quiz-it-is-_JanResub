@@ -57,9 +57,8 @@ h1 {
     position: relative;
 }
 
-#scoreboard {
-    position: absolute;
-    left: 15px;
+#counter {
+    position: 
 }
 
 form .answers {
