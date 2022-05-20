@@ -46,6 +46,10 @@ The live link can be found here - [Quiz it is](https://ookale.github.io/Quiz-it-
 
 Questions composed by myself. 
 
+Adding questions must follow format:
+
+
+
 ## Credits
 
 ### Videos taken from Youtube.
