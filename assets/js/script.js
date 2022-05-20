@@ -46,6 +46,7 @@ function startGame() {
   totalQuestionsCounter.innerText = questions.length
 }
 
+/* Next Question */
 nextButton.addEventListener("click", nextQuestion)
 
 function nextQuestion() {
@@ -57,26 +58,17 @@ function nextQuestion() {
     }
   });
 
-  // hitta vilken label som hör till den valda knappen
+  /* Find the label for the selected button */
   let selectedLabel;
   radioButtonLabels.forEach(label => {
     if (label.htmlFor === selectedButton?.id) {
       selectedLabel = label
     }
   });
-  console.log({
-    selectedLabel
-  })
 
-  // radioButtons.forEach(
-  //   radioButtonLabel => document.getElementById(radioButtonLabel.htmlFor)?.checked === true
-  // )
-
-  // spara undan nuvarande fråga i variabel
+  /* Find the selected answer from all option in current question */
   const myQuestion = shuffledQuestions[currentQuestion]
-  // spara undan alla alternativ som tillhör nuvarande fråga i en variabel
   const myAnswers = myQuestion.answers;
-  // Gå igenom all alternativ och hitta det som stämmer med label texten för det valda svaret
   let myAnswer;
   myAnswers.forEach(
     answer => {
@@ -84,10 +76,10 @@ function nextQuestion() {
         myAnswer = answer
       }
     });
-  console.log(myAnswer)
 
   checkAnswer(myAnswer)
-  console.log(score)
+
+  /* Check if we reached last question */
   if (shuffledQuestions.length === currentQuestion + 1) {
     nextButton.innerText = "Show Result"
     nextButton.addEventListener("click", showResult)
@@ -97,27 +89,29 @@ function nextQuestion() {
     showQuestion(shuffledQuestions[currentQuestion])
   }
 }
-
+/* Display a question */
 function showQuestion(question) {
   questionSpace.innerText = question.question
   for (let i = 0; i < question.answers.length; i++) {
     const label = document.getElementById("optionLabel" + `${i+1}`);
     label.innerText = question.answers[i].text
   }
-  currentQuestionCounter.innerText = currentQuestion +1
+  /* Update questioncounter */
+  currentQuestionCounter.innerText = currentQuestion + 1
 }
-
+/* Show amount of correct answers */
 function showResult() {
   correctAnswers = document.getElementById("correctAnswers")
   correctAnswers.innerText = "You scored" + `${score}`
 }
 
+/* Add score if answer is correct */
 function checkAnswer(answer) {
   if (answer.correct === true)
     score = score + 1
 }
 
-
+/* Questions */
 let questions = [{
     question: "Which player was sent off in his final game during the final of the 2006 Football World Cup?",
     answers: [{
