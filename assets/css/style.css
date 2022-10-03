@@ -57,9 +57,12 @@ h1 {
     position: relative;
 }
 
-#counter {
-    position: 
+#correctAnswers {
+    font-size: xx-large;
+    color: greenyellow;
 }
+
+#
 
 form .answers {
     padding: 5px;

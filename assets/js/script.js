@@ -102,7 +102,7 @@ function showQuestion(question) {
 /* Show amount of correct answers */
 function showResult() {
   correctAnswers = document.getElementById("correctAnswers")
-  correctAnswers.innerText = "You scored" + `${score}`
+  correctAnswers.innerText = "You scored"  + ` ${score}`
 }
 
 /* Add score if answer is correct */
