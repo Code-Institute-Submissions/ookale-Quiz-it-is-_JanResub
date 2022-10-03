@@ -62,7 +62,17 @@ h1 {
     color: greenyellow;
 }
 
-#
+.btn-success {
+    font-size: x-large;
+    padding: 10px;
+    background-color: greenyellow;
+}
+
+#next {
+    font-size: x-large;
+    padding: 10px;
+    background-color: greenyellow;
+}
 
 form .answers {
     padding: 5px;
