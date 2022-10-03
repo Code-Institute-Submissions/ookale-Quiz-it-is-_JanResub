@@ -1,4 +1,5 @@
 const startButton = document.getElementById("start-btn");
+const heading = document.getElementById("intro");
 const nextButton = document.getElementById("next");
 const quizForm = document.getElementById("quiz-form");
 const restartButton = document.getElementById("restart");
@@ -38,6 +39,7 @@ startButton.addEventListener("click", startGame)
 
 function startGame() {
   startButton.classList.add("hide")
+  heading.classList.add("hide")
   quizForm.classList.remove("hide")
   counter.classList.remove("hide")
   shuffledQuestions = questions.sort(() => Math.random() - .5)
