@@ -234,4 +234,84 @@ let questions = [{
       }
     ],
   },
+  {
+    question: "Denver has a team in the NFL, what are they called?",
+    answers: [{
+        text: "The Broncos",
+        correct: true 
+      },
+      {
+        text: "The Falcons",
+        correct: false
+      },
+      {
+        text: "The Rockies",
+        correct: false
+      },
+      {
+        text: "The Bears",
+        correct: false
+      }
+    ],
+  },
+  {
+    question: "Prix d'Amérique is one of the worlds biggest harness racing race thst takes place every year in Paris, France. Who won the race in 2018?",
+    answers: [{
+        text: "Bold Eagle",
+        correct: false
+      },
+      {
+        text: "Belina Josselyn",
+        correct: false
+      },
+      {
+        text: "Readly Express",
+        correct: true
+      },
+      {
+        text: "Face Time Bourbon",
+        correct: false
+      }
+    ],
+  },
+  {
+    question: "Which Argentine soccer player has the nick name 'El Apache'?",
+    answers: [{
+        text: "Fernando Redondo",
+        correct: false
+      },
+      {
+        text: "Diego Simeone",
+        correct: false 
+      },
+      {
+        text: "Sergio Aguero",
+        correct: false
+      },
+      {
+        text: "Carlos Tevez",
+        correct: true
+      }
+    ],
+  },
+  {
+    question: "Who won the Golden Boot as Europes leading scorer in soccer 2019/2020?",
+    answers: [{
+        text: "Lionel Messi",
+        correct: false
+      },
+      {
+        text: "Cristiano Ronaldo",
+        correct: false
+      },
+      {
+        text: "Ciro Immobile",
+        correct: true
+      },
+      {
+        text: "Robert Lewandowski",
+        correct: false
+      }
+    ],
+  },
 ]
