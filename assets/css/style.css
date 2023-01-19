@@ -74,25 +74,12 @@ h1 {
     background-color: greenyellow;
 }
 
-form .answers {
-    padding: 5px;
+.answers {
     margin: 5px;
-    letter-spacing: 1px;
+    padding: 8px;
     display: flex;
     flex-direction: column;
-}
-
-.answers label {
-    margin-left: 5px;
-    flex-flow: column wrap;
-    align-items: baseline;
-    justify-content: center;
-}
-
-.answers input {
-    flex-flow: column wrap;
-    align-items: baseline;
-    justify-content: center;
+    align-items: center;
 }
 
 .hide {
