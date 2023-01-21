@@ -113,6 +113,8 @@ function checkAnswer(answer) {
     score = score + 1
 }
 
+
+
 /* Questions */
 let questions = [{
     question: "Which player was sent off in his final game during the final of the 2006 Football World Cup?",
