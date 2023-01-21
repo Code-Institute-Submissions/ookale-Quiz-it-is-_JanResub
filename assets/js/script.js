@@ -48,6 +48,13 @@ function startGame() {
   totalQuestionsCounter.innerText = questions.length
 }
 
+/* Restart Button */
+restartButton.addEventListener("click", restartGame)
+  function restartGame() {
+    location.reload()
+  }
+
+
 /* Next Question */
 nextButton.addEventListener("click", nextQuestion)
 
