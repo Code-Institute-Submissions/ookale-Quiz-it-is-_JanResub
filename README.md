@@ -58,6 +58,9 @@ No errors were found when passing through the official Jigsaw validator.
 
 - Lighthouse came back with good accessability. 
 
+### Responsiveness
+- Whole page is responsive on smaller screens and mobiles
+
 
 ## Unfixed bugs
 - The radio buttons for the four choices are at the moment not vertically aligned. 
